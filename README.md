@@ -1,8 +1,8 @@
 Heart Disease Classification System
-a. Problem Statement
+a. Problem Statement:
 The goal of this project is to implement and evaluate six different Machine Learning classification models to predict the presence of heart disease. In a medical context, the objective is to maximize the model's ability to correctly identify patients with heart disease (high Recall) to ensure timely intervention.
 
-b. Dataset Description
+b. Dataset Description:
 Source: UCI Heart Disease Dataset (Cleveland)
 
 Features: 16 (including id, age, sex, cp, thalach, oldpeak, etc.)
@@ -13,7 +13,7 @@ Target Variable: num (Mapped to binary 0 for Healthy and 1 for Heart Disease)
 
 Preprocessing: Handled missing values via median/mode imputation, performed feature scaling using StandardScaler, and categorical encoding via OneHotEncoder.
 
-c. Models Used and Evaluation Metrics
+c. Models Used and Evaluation Metrics:
 I implemented six models using a Scikit-learn Pipeline to ensure robust preprocessing for each. 
 
 Model Name,Accuracy,AUC,Precision,Recall,F1,MCC
@@ -24,7 +24,7 @@ Naive Bayes,0.804,0.902,0.876,0.780,0.825,0.610
 Random Forest,0.880,0.940,0.914,0.881,0.897,0.755
 XGBoost,0.842,0.933,0.892,0.835,0.863,0.680
 
-Observations about Model Performance
+Observations about Model Performance:
 
 ML Model Name,Observation about model performance
 Logistic Regression,"Performed well as a baseline, indicating that clinical features like age and blood pressure have a strong linear relationship with the target."
@@ -34,5 +34,5 @@ Naive Bayes,"Solid AUC (0.902), but lower Recall. It serves as a fast and effici
 Random Forest,Best overall model. Highest Accuracy (0.880) and AUC (0.940). It effectively reduced variance and handled non-linear relationships in the medical data.
 XGBoost,Very robust performance with the second-highest AUC (0.933). It showed strong class separation capabilities.
 
-Conclusion
+Conclusion:
 After evaluating six models, the Random Forest classifier proved to be the most robust for this dataset. However, for clinical screening where missing a case is dangerous, kNN's high recall makes it a secondary model of interest.

@@ -33,3 +33,6 @@ kNN,Achieved the highest Recall (0.908). This is critical in medical diagnosis a
 Naive Bayes,"Solid AUC (0.902), but lower Recall. It serves as a fast and efficient classifier despite its feature independence assumption."
 Random Forest,Best overall model. Highest Accuracy (0.880) and AUC (0.940). It effectively reduced variance and handled non-linear relationships in the medical data.
 XGBoost,Very robust performance with the second-highest AUC (0.933). It showed strong class separation capabilities.
+
+Conclusion
+After evaluating six models, the Random Forest classifier proved to be the most robust for this dataset. However, for clinical screening where missing a case is dangerous, kNN's high recall makes it a secondary model of interest.

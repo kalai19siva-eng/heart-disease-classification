@@ -15,7 +15,7 @@ This application allows you to evaluate 6 different Machine Learning models
 on the Heart Disease (Cleveland) dataset.
 """)
 
-# 1. Sidebar for Inputs
+# Sidebar for Inputs
 st.sidebar.header("User Input & Settings")
 
 # Model Selection
@@ -27,7 +27,7 @@ model_choice = st.sidebar.selectbox(
 # File Upload
 uploaded_file = st.sidebar.file_uploader("Upload 'Heart_Disease_Cleaned.csv'", type=["csv"])
 
-# 2. Main Logic
+# Main Logic
 if uploaded_file is not None:
     # Load data
     df = pd.read_csv(uploaded_file)
